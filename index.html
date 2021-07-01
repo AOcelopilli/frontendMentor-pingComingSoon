@@ -23,8 +23,14 @@
 
     <form id="form">
       <legend>Subscribe and get notified</legend>
-      <input type="text" name="email" id="email" placeholder="Your email address..."
-        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]">
+
+      <div class="email">
+        <input type="email" name="email" id="email" placeholder="Your email address..."
+          title="This is not a valid email" required
+          pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+
+        <small class="email-msg">Please provide a valid email address</small>
+      </div>
       <input type="submit" value="Notify Me">
     </form>
 
@@ -45,6 +51,7 @@
       Coded by <a href="https://www.angelpineda.com.mx" target="_blank">Angel Pineda</a>.
     </p>
   </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>

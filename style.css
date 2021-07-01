@@ -61,6 +61,10 @@ body{
   padding: 1rem 0;
 }
 
+#form .email{
+  width: 100%;
+}
+
 #form input{
   border: thin solid var(--main-blue);
   border-radius: 2rem;
@@ -74,6 +78,45 @@ body{
 #form input::placeholder{
   color: var(--main-blue-pale);
 }
+
+#form input[type="email"]:invalid{
+  opacity: 0.9;
+}
+
+#form input[type="email"].error{
+  border: thin solid var(--main-red);
+}
+
+#form input[type="email"].error + .email-msg{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+#form .email-msg{
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  color: var(--main-red);
+  font-size: 0.6rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+/* @keyframes show-message {
+  from{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  to{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+} */
 
 #form input[type="submit"]{
   background-color: var(--main-blue);
