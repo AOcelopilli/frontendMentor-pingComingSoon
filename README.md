@@ -37,7 +37,7 @@ This is a preview of my result.
 ### Links
 
 - Solution URL: [Visit](https://your-solution-url.com)
-- Live Site URL: [Visit](https://your-live-site-url.com)
+- Live Site URL: [Visit](https://aocelopilli.github.io/frontendMentor-pingComingSoon/)
 
 ## My process
 

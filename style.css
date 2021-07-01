@@ -83,26 +83,30 @@ body {
   color: var(--main-blue-pale);
 }
 
-#form input[type="email"]:invalid {
-  opacity: 0.9;
+#email {
+  transition: border 0.3s ease;
 }
 
-#form input[type="email"].error {
+#email.ok {
+  border: thin solid rgb(16, 214, 16);
+  box-shadow: 0px 0px 4px rgb(16, 214, 16);
+}
+
+#email.error {
   border: thin solid var(--main-red);
+  box-shadow: 0px 0px 4px var(--main-red);
 }
 
-#form input[type="email"].error + .email-msg {
+#email.error + #msg {
   display: block;
   visibility: visible;
   opacity: 1;
 }
 
-#form .email-msg {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
+#msg {
   color: var(--main-red);
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(0.4rem + 1vw);
+  padding-left: 1rem;
   font-style: italic;
   margin-bottom: 1rem;
   transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
