@@ -1,6 +1,5 @@
-const d = document, $email = d.querySelector("input[type='email']");
-
-console.log($email);
+const d = document,
+  $email = d.getElementById("email");
 
 d.addEventListener("focusout", (e) => {
   /* TODO: 
