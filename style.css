@@ -1,5 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
 
+:root{
+  --main-blue: hsl(223, 87%, 63%);
+  --main-blue-pale: hsl(223, 100%, 88%);
+  --main-blue-dark: hsl(209, 33%, 12%);
+  --main-red: hsl(354, 100%, 66%);
+  --main-gray: hsl(0, 0%, 59%);
+}
+
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+
+body{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+#main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+#main  img{
+  width: 20%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+#main h2{
+  color: var(--main-gray);
+  font-weight: 300;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+
+#main h2 span{
+  color: var(--main-blue-dark);
+  font-weight: 700;
+}
+
+#form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#form legend{
+  font-size: 0.75rem;
+  padding: 1rem 0;
+}
+
+#form input{
+  border: thin solid var(--main-blue);
+  border-radius: 2rem;
+  font-family: "Libre Franklin", sans-serif;
+  margin: 0.5rem auto;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  outline: none;
+}
+
+#form input::placeholder{
+  color: var(--main-blue-pale);
+}
+
+#form input[type="submit"]{
+  background-color: var(--main-blue);
+  color: white;
+  font-weight: 700;
+  font-size: 0.75rem;
+  cursor: pointer;
+  box-shadow: 0px 2px 20px 2px var(--main-blue-pale);
+}
+
+#main #dashboard{
+  width: 100%;
+}
+
+.social-media{
+  display: flex;
+  margin: 2rem auto;
+}
+
+.social-media a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: thin solid var(--main-blue);
+  color: var(--main-blue);
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 0.5rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.copyright{
+  font-size: 0.75rem;
+  color: var(--main-gray);
+}
+
+
 .attribution {
       font-size: 11px;
       text-align: center;
