@@ -34,16 +34,18 @@ body {
   padding: 1rem;
 }
 
-#main img {
-  width: 20%;
+#main #logo {
   margin: 0 auto;
+  width: 20vw;
+  max-width: 80px;
+  height: auto;
   padding: 2rem 0;
 }
 
 #main h2 {
   color: var(--main-gray);
   font-weight: 300;
-  font-size: 1.3rem;
+  font-size: calc(1rem + 2vw);
 }
 
 #main h2 span {
@@ -59,7 +61,7 @@ body {
 }
 
 #form legend {
-  font-size: 0.75rem;
+  font-size: calc(0.5rem + 1vw);
   padding: 1rem 0;
 }
 
@@ -100,7 +102,7 @@ body {
   visibility: hidden;
   opacity: 0;
   color: var(--main-red);
-  font-size: 0.6rem;
+  font-size: calc(0.5rem + 1vw);
   font-style: italic;
   margin-bottom: 1rem;
   transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -110,7 +112,7 @@ body {
   background-color: var(--main-blue);
   color: white;
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: calc(0.5rem + 1vw);
   cursor: pointer;
   box-shadow: 0px 8px 15px var(--main-blue-pale);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
@@ -122,6 +124,7 @@ body {
 
 #main #dashboard {
   width: 100%;
+  padding: 2rem 0;
 }
 
 .social-media {
@@ -150,7 +153,7 @@ body {
 }
 
 .copyright {
-  font-size: 0.75rem;
+  font-size: calc(0.5rem + 1vw);
   color: var(--main-gray);
 }
 
